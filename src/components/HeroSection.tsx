@@ -64,9 +64,9 @@ export default function HeroSection() {
             </div>
 
             {/* Content */}
-            <div className="relative z-10 mx-auto w-full max-w-2xl px-6 py-20 text-center sm:py-24">
+            <div className="relative z-10 mx-auto w-full max-w-2xl px-6 pt-24 pb-32 text-center sm:pt-28 sm:pb-36">
                 <motion.div
-                    className="mb-6 inline-block rounded-full border border-white/10 bg-white/5 px-4 py-2"
+                    className="mb-8 inline-block rounded-full border border-white/10 bg-white/5 px-4 py-2"
                     initial="hidden" animate="visible" custom={0} variants={fade}
                 >
                     <span className="text-xs font-bold uppercase tracking-[0.2em] text-coral-400">
@@ -76,7 +76,7 @@ export default function HeroSection() {
 
                 {/* Title — pure white, maximum contrast */}
                 <motion.h1
-                    className="mb-6 font-heading text-5xl text-white sm:text-6xl md:text-7xl"
+                    className="mb-8 font-heading text-5xl text-white sm:text-6xl md:text-7xl"
                     initial="hidden" animate="visible" custom={1} variants={fade}
                 >
                     Coolidge{" "}
@@ -84,7 +84,7 @@ export default function HeroSection() {
                 </motion.h1>
 
                 <motion.p
-                    className="mx-auto mb-14 max-w-sm text-base leading-relaxed sm:text-lg"
+                    className="mx-auto mb-16 max-w-sm text-base leading-relaxed sm:text-lg"
                     style={{ color: "rgba(255,255,255,0.72)" }}
                     initial="hidden" animate="visible" custom={2} variants={fade}
                 >
@@ -94,7 +94,7 @@ export default function HeroSection() {
 
                 {/* Meeting details — clear white text */}
                 <motion.div
-                    className="mb-14 flex flex-col items-center gap-3 sm:flex-row sm:justify-center sm:gap-5"
+                    className="mb-16 flex flex-col items-center gap-3 sm:flex-row sm:justify-center sm:gap-5"
                     initial="hidden" animate="visible" custom={3} variants={fade}
                 >
                     {[
@@ -112,15 +112,17 @@ export default function HeroSection() {
                     ))}
                 </motion.div>
 
-                {/* CTA — white text on solid coral, unmissable */}
+                {/* CTA — Navy text on solid coral for maximum contrast */}
                 <motion.div
+                    className="mb-12"
                     initial="hidden" animate="visible" custom={4} variants={fade}
                 >
                     <a
                         href="#signup"
-                        className="inline-block rounded-full px-10 py-4 text-base font-bold text-white transition-all duration-200 hover:-translate-y-0.5"
+                        className="inline-block rounded-full px-10 py-4 text-base font-bold transition-all duration-200 hover:-translate-y-0.5"
                         style={{
                             background: "var(--coral-500)",
+                            color: "var(--navy-900)",
                             boxShadow: "0 4px 24px rgba(232,132,95,0.3)",
                         }}
                         onMouseEnter={(e) => {
