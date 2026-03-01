@@ -21,19 +21,15 @@ export default function SignUpForm() {
 
     const onSubmit = async (data: FormData) => {
         try {
-            const params = new URLSearchParams();
-            params.append("name", data.name);
-            params.append("email", data.email);
-
             await fetch(
                 "https://script.google.com/macros/s/AKfycbzCBNXXYAJ9j2bs_vCpCTQ68rASb3lBHtegIbVw94alIBhmoLUgryEybjuCgT6fWMJHMQ/exec",
                 {
                     method: "POST",
                     mode: "no-cors",
                     headers: {
-                        "Content-Type": "application/x-www-form-urlencoded",
+                        "Content-Type": "text/plain;charset=utf-8",
                     },
-                    body: params.toString(),
+                    body: JSON.stringify(data),
                 }
             );
 
