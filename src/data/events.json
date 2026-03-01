@@ -1,0 +1,45 @@
+[
+  {
+    "id": "1",
+    "title": "Cornerstone Friday Night Meeting",
+    "date": "2026-03-06",
+    "time": "6:30 PM – 7:30 PM",
+    "description": "Our regular weekly open discussion meeting. All are welcome — whether you're new to recovery or have been on this path for years. Come as you are.",
+    "type": "event",
+    "location": "Brookline, MA"
+  },
+  {
+    "id": "2",
+    "title": "Spring Speaker Series Begins",
+    "date": "2026-03-13",
+    "time": "6:30 PM – 7:30 PM",
+    "description": "Kicking off our spring speaker series! Each week we'll hear from a different member of the recovery community sharing their experience, strength, and hope.",
+    "type": "event",
+    "location": "Brookline, MA"
+  },
+  {
+    "id": "3",
+    "title": "Area Service Conference — Volunteers Needed",
+    "date": "2026-03-22",
+    "time": "9:00 AM – 4:00 PM",
+    "description": "The Massachusetts Area 30 Service Conference is looking for volunteers. This is a great opportunity to give back and connect with the wider AA community. Contact us if you're interested in helping out.",
+    "type": "announcement"
+  },
+  {
+    "id": "4",
+    "title": "Welcome to Our New Website!",
+    "date": "2026-03-01",
+    "time": null,
+    "description": "We're excited to launch our new Coolidge Cornerstone website. Here you'll find meeting info, upcoming events, and resources for recovery. Bookmark this page and check back often for updates!",
+    "type": "announcement"
+  },
+  {
+    "id": "5",
+    "title": "Big Book Study Group Starting April",
+    "date": "2026-04-03",
+    "time": "5:30 PM – 6:15 PM",
+    "description": "A new Big Book study group will meet before our regular Friday session starting in April. This is a great way to deepen your understanding of the program. Open to all.",
+    "type": "event",
+    "location": "Brookline, MA"
+  }
+]
