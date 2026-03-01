@@ -20,11 +20,27 @@ export default function SignUpForm() {
     } = useForm<FormData>();
 
     const onSubmit = async (data: FormData) => {
-        await new Promise((resolve) => setTimeout(resolve, 800));
-        console.log("Form submitted:", data);
-        setIsSubmitted(true);
-        reset();
-        setTimeout(() => setIsSubmitted(false), 5000);
+        try {
+            const formData = new FormData();
+            formData.append("name", data.name);
+            formData.append("email", data.email);
+
+            await fetch(
+                "https://script.google.com/macros/s/AKfycbzCBNXXYAJ9j2bs_vCpCTQ68rASb3lBHtegIbVw94alIBhmoLUgryEybjuCgT6fWMJHMQ/exec",
+                {
+                    method: "POST",
+                    body: formData,
+                    mode: "no-cors",
+                }
+            );
+
+            setIsSubmitted(true);
+            reset();
+            setTimeout(() => setIsSubmitted(false), 8000);
+        } catch (error) {
+            console.error("Form submission error:", error);
+            alert("Something went wrong. Please try again later.");
+        }
     };
 
     return (
